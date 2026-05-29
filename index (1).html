@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>CXP MANAGER</title>
+  
+  <link rel="apple-touch-icon" href="icono.png">
+  <link rel="icon" type="image/png" href="icono.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2563eb">
+
+  <style>
+    body, html { 
+      margin: 0; 
+      padding: 0; 
+      height: 100%; 
+      width: 100%; 
+      overflow: hidden; /* Evita el doble scroll */
+      background-color: #f8fafc; 
+    }
+    .iframe-container {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      -webkit-overflow-scrolling: touch; /* Suaviza el scroll en iOS */
+      overflow-y: scroll;
+    }
+    iframe { 
+      border: none; 
+      width: 100%; 
+      height: 100%; 
+      display: block; 
+    }
+  </style>
+</head>
+<body>
+  <div class="iframe-container">
+    <iframe src="https://script.google.com/macros/s/AKfycbwSKUvfssrT8gEOEiqekCWQEhl1gauPKlUoowvt_uxFwqirPimQZEI2BYTBEEoXgUEl/exec" allow="camera; microphone; display-capture; geolocation"></iframe>
+  </div>
+</body>
+</html>
