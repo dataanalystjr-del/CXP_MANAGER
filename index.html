@@ -37,5 +37,12 @@
   <div class="iframe-container">
     <iframe src="https://script.google.com/macros/s/AKfycbwSKUvfssrT8gEOEiqekCWQEhl1gauPKlUoowvt_uxFwqirPimQZEI2BYTBEEoXgUEl/exec" allow="camera; microphone; display-capture; geolocation"></iframe>
   </div>
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js')
+      .then(() => console.log('SW registrado'))
+      .catch(err => console.error('SW error:', err));
+  }
+</script>
 </body>
 </html>
